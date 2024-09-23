@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en"> <!--Se utiliza para darle a el navegador el lenguaje (Ingles), que utlizaremos en este codigo-->
+<head>
+        <meta charset="UTF-8"> <!-- Este meta se utiliza para que cualquier entonacion,tilde o demas se lea en el navegador de forma correcta-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Etiqueta para que se acople a cualquier dispositivo y que no tenga zoom, que sea un zoom predeterminado-->
+        <title>Stamp It</title> <!--Este sera el titulo que aparece en la aprte superior en la pestaña-->
+        <link rel="stylesheet" href="styles.css"> <!-- Se utiliza para conectar la hoja HTML con la Hoja de CSS-->
+        <link rel="icon" href="../Samuel- Castro-Stamp it/imagens/icono.png" type="image/x-icon">
+
+<body>
+    <div id="home"></div>
+    <header > 
+        <nav class="menu">
+            <ul>
+                <li><a href="#home">Inicio</a></li>
+                <li><a href="#intro">Introducción</a></li>
+                <li><a href="#obje">Objetivos</a></li>
+                <li><a href="#mv">Misión y Visión</a></li>
+                <li><a href="#contac">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <img class="Fondo" src="Fondo.png"> <!--La imagen con una clase para ponerle diseño en el css-->
+    <div id="intro"></div>
+    <div class="contenedor-intro" >
+        <div class="contenedor-foto-1">
+            <img class="foto-1" src="numero-1.png" alt="Imagen">
+        </div>   
+        <div id="introduccion">
+            <h1 class="intro-titulo">Stamp It</h1>
+            <p class="intro1-sub">Stamp It se planteó con el propósito de satisfacer una necesidad de las personas, sobre todo de las nuevas generaciones, ya que según nuestros ideales todos deberían sentirse cómodos e identificados con sus prendas o accesorios, cada persona debería reflejar estéticamente todo lo que representa su ser, su personalidad.</p>
+            <p class="intro2-sub">Por ese motivo Stamp It mediante el estampado y la venta de ropa ya accesorios busca que el consumidor obtenga esta satisfacción consigo mismo cada vez que vista una prenda o accesorio de nuestra marca o estampada por nuestra marca.</p>
+        </div>
+    </div>
+    <div id="obje"></div>
+    <div class="contenedor-obj" >
+        <div id="objetivos">
+            <h2 class="titu-obje">Objetivos</h2>
+            <h3 class="sub-titu">Objetivo general</h3>
+            <p class="Parra-obje">Para finales de 2025, Stamp It estará posicionada dentro de las industrias textil y manufacturera ubicada en Bogotá como una empresa con ideas nuevas y eficaces para dejar atrás el estampado tradicional en productos textiles.</p>
+            <h3 class="p-obje">Objetivos específicos</h3>
+            <ul class="importe-obje">
+                <li>Lograr que el proyecto empiece a ser una realidad y que se conforme una empresa legalmente constituida en los próximos 6 meses</li>
+                <li>Crear un sitio web y distintas redes sociales que ayuden al trabajo de marketing y a cumplir los otros objetivos para 2025</li>
+                <li>Convertir a Stamp It en una marca con una buena reputación y alto prestigio dentro de las industrias textil y manufacturera en Bogotá para 2027</li>
+            </ul>
+        </div>
+        <div class="contenedor-foto-2"> 
+            <img class="foto-2" src="numero-2.png">
+        </div>
+    </div>
+    <div id="mv"></div>
+    <div class="contenedor-mv" >
+        <div class="contenedor-foto-3">
+            <img class="foto-3" src="numero-3.png">
+        </div>
+        <div id="mision-vision">
+             <h2 class="titu-mv">Misión y Visión</h2>
+            <h3 class="sub-mv">Misión empresarial</h3>
+            <p class="parra-mv">Ofrecer y elaborar personalización de prendas por medio de estampados instantáneos de calidad y en un futuro también ofrecer un servicio de venta de prendas.</p>
+            <h3 clas="sub-vm">Visión empresarial</h3>
+            <p class="parra-vm">Para 2025, Stamp It será una empresa pequeña distribuida en distintas zonas estratégicas ubicadas en Bogotá, Colombia, que será capaz de elaborar aproximadamente 50 estampados al mes con un porcentaje de ganancia del 35% por estampado en relación al costo de producción.</p>
+        </div>
+    </div> 
+    <div id="contac"></div>
+    <div id="contacto"  > 
+        <h2 class="titu-con">Contacto</h2>
+        <h3 class="sub-titu">Puedes dejarnos tu información y nos comunicaremos lo más pronto posible</h3>
+        <form id="contacto-form">
+            <!-- Nombre -->
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required><br><br>
+        
+            <!-- Opción de contacto -->
+            <label for="contacto">¿Cómo quieres ser contactado?:</label><br>
+            <div class="opciones-contacto">
+                <input type="radio" id="correo" name="contacto" value="correo" onchange="mostrarCampo()" required>
+                <label for="correo">Correo electrónico</label>
+            </div>
+            <div class="opciones-contacto">
+                <input type="radio" id="llamada" name="contacto" value="llamada" onchange="mostrarCampo()">
+                <label for="llamada">Llamada telefónica</label>
+            </div>
+            <div class="opciones-contacto">
+                <input type="radio" id="whatsapp" name="contacto" value="whatsapp" onchange="mostrarCampo()">
+                <label for="whatsapp">WhatsApp</label>
+            </div>
+            <br>
+        
+            <!-- Campo dinámico según selección -->
+            <div id="campo-dinamico"></div>
+        
+            <!-- Mensaje -->
+            <label for="mensaje">Mensaje:</label><br>
+            <textarea id="mensaje" name="mensaje" rows="4" cols="50" placeholder="Escribe tu solicitud..." required></textarea><br><br>
+        
+            <!-- Botón de envío -->
+            <button type="submit">Enviar</button>
+        </form>
+        <p class="parra-con">Si estas interesado en nuestros servicios comunícate a nuestro número de teléfono: +57 313 4281755 o a nuestro correo: <a href="mailto:its.stampit@gmail.com">its.stampit@gmail.com</a></p>
+    </div>
+    
+    
+    <footer>
+        <p class="final">&copy; Creado por Samuel Castro Albarracin</p>
+    </footer>
+    <script src="index.js"></script>
+</body>
+</html>
